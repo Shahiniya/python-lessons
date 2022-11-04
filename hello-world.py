@@ -20,10 +20,10 @@ capital = {
 #for key in sorted(capital.keys()):
   #  print(key.title())
     
-#poytaxt='\nDunyo poytaxtlari:'
-#print(poytaxt)
-#for value in sorted(capital.values()):
-   # print(value.title()) 
+poytaxt='\nDunyo poytaxtlari:'
+print(poytaxt)
+for value in sorted(capital.values()):
+   print(value.title()) 
    
 davlat= input('Which capital of country do you want know?\n')
 poytaxt = capital.get(davlat)
