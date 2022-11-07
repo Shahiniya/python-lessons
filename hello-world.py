@@ -50,9 +50,39 @@ car2 = {
                 'korobka':'avtomat'
                 }
 
-cars = [car0,car1,car2]
-for car in cars:
-    print(
-        f"{car['model'].title()},"
-        f"{car['color']}"
-        )
+
+# =============================================================================
+# cars = [car0,car1,car2]
+# for car in cars:
+#     print(
+#             f"{car['model'].title()},"
+#             f"{car['color']}"
+#             )
+# 
+# =============================================================================
+
+malibus = []
+for n in range(10):
+    new_car = {
+        'model':'Tesla',
+        'color':'red',
+        'year':'2023',
+        'korobka':'avtomat'
+        }
+    # print(new_car)
+    malibus.append(new_car)
+    
+for malibu in malibus[:3]:
+    malibu['color'] ='qora'
+    # print(malibu)
+
+for malibu in malibus[3:6]:
+    malibu['color'] ='grey'
+   
+    
+for malibu in malibus[6:]:
+    malibu['color'] ='white'
+    malibu['korobka'] = 'mexanika'
+   
+for malibu in malibus:
+    print(malibu)
