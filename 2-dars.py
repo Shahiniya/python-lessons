@@ -14,8 +14,8 @@ capital = {
 
 poytaxt='\nDunyo poytaxtlari:'
 print(poytaxt)
-for value in sorted(capital.values()):
-    print(value.title()) 
+#for value in sorted(capital.values()):
+   # print(value.title()) 
 davlat= input('Which capital of country do you want know?\n')
 poytaxt = capital.get(davlat)
 if poytaxt == None:

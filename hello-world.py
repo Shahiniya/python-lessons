@@ -67,7 +67,8 @@ for n in range(10):
         'model':'Tesla',
         'color':'red',
         'year':'2023',
-        'korobka':'avtomat'
+        'korobka':'avtomat',
+        'price':'10000$'
         }
     # print(new_car)
     malibus.append(new_car)
@@ -85,19 +86,12 @@ for malibu in malibus[6:]:
     malibu['korobka'] = 'mexanika'
    
 for malibu in malibus:
-    print(malibu)
-    
-for malibu in malibus[:3]:
-    malibu['color'] ='qora'
-    # print(malibu)
-
-for malibu in malibus[3:6]:
-    malibu['color'] ='grey'
-   
-    
-for malibu in malibus[6:]:
-    malibu['color'] ='white'
-    malibu['korobka'] = 'mexanika'
-   
+    if malibu['korobka'] == 'avtomat':
+        malibu['price'] = 3000
+    else:
+        malibu['price'] = 2000
+        
+        
 for malibu in malibus:
     print(malibu)
+    
