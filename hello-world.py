@@ -86,3 +86,18 @@ for malibu in malibus[6:]:
    
 for malibu in malibus:
     print(malibu)
+    
+for malibu in malibus[:3]:
+    malibu['color'] ='qora'
+    # print(malibu)
+
+for malibu in malibus[3:6]:
+    malibu['color'] ='grey'
+   
+    
+for malibu in malibus[6:]:
+    malibu['color'] ='white'
+    malibu['korobka'] = 'mexanika'
+   
+for malibu in malibus:
+    print(malibu)
