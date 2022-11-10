@@ -83,12 +83,35 @@ for avto in avtolar:
     else:
         narxi='None'
     print(f"{avto['model']} {avto['rangi']} Narxi:{narxi} ")
+
+
+def oraliq_son(min,max,qadam):
+    sonlar=[]
+    while min<max:
+        sonlar.append(min)
+        min+=1
+    return sonlar
+for sonlar in oraliq_son():
+    if min<max:
+        qadam.range(min,max,2)
+shag = input('{min} {max}')
+print({qadam})
+# print(oraliq_son(1,11))
         
         
-        
-        
-        
-        
+# =============================================================================
+# def fibonacci(n):
+#     sonlar = []
+#     for x in range(n):
+#         if x == 0 or x == 1:
+#             sonlar.append(1)
+#         else:
+#             sonlar.append(sonlar[x - 1] + sonlar[x - 2])
+#     return sonlar
+# 
+# 
+# print(fibonacci(10))      
+# =============================================================================
         
         
         
